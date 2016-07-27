@@ -2,7 +2,7 @@
 
 // create dataset
 var data = [];
-var names = ["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur", "Adipisicing", "elit", "Eiusmod tempor", "Incididunt"];
+var names = ["Watch", "Fork", "Subscribed", "Comment", "Issue", "Pull_request"];
 var endTime = Date.now();
 var month = 30 * 24 * 60 * 60 * 1000;
 var startTime = endTime - 6 * month;
