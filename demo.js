@@ -22,7 +22,7 @@ function createEvent (name, maxNbEvents) {
 
     return event;
 }
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 6; i++) {
     data.push(createEvent(names[i]));
 }
 
