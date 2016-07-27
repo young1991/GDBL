@@ -17,10 +17,10 @@ function createEvent (name, maxNbEvents) {
     // add up to 200 events
     d3.csv("developer_8153.csv",function(error,csv){
     	if (error) throw error;
-	    csv.forEach(function(x){
-	       var time = x.created_at
-           if (x.action == name) event.data.push(new Date(time));
-	    });
+	csv.forEach(function(x){
+	    var time = x.created_at
+            if (x.action == name) event.data.push(new Date(time));
+	});
         console.log(csv);
     });
 
