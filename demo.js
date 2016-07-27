@@ -7,6 +7,7 @@ var endTime = Date.now();
 var month = 30 * 24 * 60 * 60 * 1000;
 var startTime = endTime - 6 * month;
 
+
 function createEvent (name, maxNbEvents) {
     maxNbEvents = maxNbEvents | 200;
     var event = {
@@ -14,10 +15,18 @@ function createEvent (name, maxNbEvents) {
         data: []
     };
     // add up to 200 events
-    var max =  Math.floor(Math.random() * maxNbEvents);
-    for (var j = 0; j < max; j++) {
-        var time = (Math.random() * (endTime - startTime)) + startTime;
-        event.data.push(new Date(time));
+    d3.csv("developer_8153.csv",function(error,csv){
+    	if (error) throw error;
+	    csv.forEach(function(x){
+	       var time = x.created_at
+           if (x.action == name) event.data.push(new Date(time));
+	    });
+    });
+
+    //var max =  Math.floor(Math.random() * maxNbEvents);
+    //for (var j = 0; j < max; j++) {
+    //    var time = (Math.random() * (endTime - startTime)) + startTime;
+    //    event.data.push(new Date(time));
     }
 
     return event;
