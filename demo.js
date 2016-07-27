@@ -19,7 +19,7 @@ function createEvent (name, maxNbEvents) {
     	if (error) throw error;
 	    csv.forEach(function(x){
 	       var time = x.created_at
-	       if (x.action == name) event.data.push(new Date(time));
+	       event.data.push(new Date(time));
 	    });
     });
     console.log(event);
