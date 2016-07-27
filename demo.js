@@ -22,7 +22,7 @@ function createEvent (name, maxNbEvents) {
            if (x.action == name) event.data.push(new Date(time));
 	    });
     });
-    console.log(data);
+    console.log(event);
     //var max =  Math.floor(Math.random() * maxNbEvents);
     //for (var j = 0; j < max; j++) {
     //    var time = (Math.random() * (endTime - startTime)) + startTime;
