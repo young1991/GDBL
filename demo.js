@@ -21,6 +21,7 @@ function createEvent (name, maxNbEvents) {
 	       var time = x.created_at
            if (x.action == name) event.data.push(new Date(time));
 	    });
+        console.log(csv);
     });
 
     //var max =  Math.floor(Math.random() * maxNbEvents);
