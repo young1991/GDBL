@@ -17,13 +17,12 @@ function createEvent (name, maxNbEvents) {
     // add up to 200 events
     d3.csv("developer_8153.csv",function(error,csv){
     	if (error) throw error;
-	csv.forEach(function(x){
-	    var time = x.created_at
-            if (x.action == name) event.data.push(new Date(time));
-	});
-        console.log(csv);
+	    csv.forEach(function(x){
+	       var time = x.created_at
+           if (x.action == name) event.data.push(new Date(time));
+	    });
     });
-
+    console.log(data);
     //var max =  Math.floor(Math.random() * maxNbEvents);
     //for (var j = 0; j < max; j++) {
     //    var time = (Math.random() * (endTime - startTime)) + startTime;
