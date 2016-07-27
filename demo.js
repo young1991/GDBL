@@ -15,14 +15,14 @@ function createEvent (name, maxNbEvents) {
         data: []
     };
     // add up to 200 events
-    d3.csv("developer_8153.csv",function(error,csv){
+    d3.csv("developer_129.csv",function(error,csv){
     	if (error) throw error;
 	    csv.forEach(function(x){
 	       var time = x.created_at
 	       event.data.push(new Date(time));
 	    });
     });
-    console.log(event);
+    //console.log(event);
     //var max =  Math.floor(Math.random() * maxNbEvents);
     //for (var j = 0; j < max; j++) {
     //    var time = (Math.random() * (endTime - startTime)) + startTime;
