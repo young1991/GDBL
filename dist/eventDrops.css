@@ -1,2 +1,14 @@
 .zoom-area{fill:transparent;cursor:pointer}.line-separator,.x-axis,.y-tick{stroke:black;fill:none;stroke-width:1px}.line-separator:last-child{display:none}.x-axis{position:inherit;z-index:50}text{stroke:none;fill:#000}.graph-body .line{height:20px;padding:10px}
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+
+#behavior_statistics {width:500px;height:310px;float:left;}
+#basic {width:500px;height:310px;float:left;}
 /*# sourceMappingURL=eventDrops.css.map*/

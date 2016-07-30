@@ -37,16 +37,28 @@
 
 <p>Software development is performed by developers working together on a common project. Software developers produce a large number of activities in their daily work, ranging from commit code and raise issues to online discussions and documentation. Understanding these developer behavior can provide valuable insight into the software development process.</p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Behavior Map</h3>
-
-Input project name and developer name, 
+Input the developer information whom you want to analyze, 
         <input type="text" placeholder="Project" name="project"/>/
         <input type="text" placeholder="Developer" name="developer"/>
         <input type="button" value="Submit" onclick="getProjectDeveloper()" />
-        <script src="./dist/d3.min.js"></script>
-        <script src="./dist/eventDrops.js"></script>
-        <script src="./demo.js"></script>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Behavior Statistics</h3>
+	
+	<div id="behavior_statistics"></div>
+    <div id="basic"></div> 
+	<script src="./dist/d3.min.js"></script>
+	<script src="./dist/eventDrops.js"></script>
+	<script src="./behavior_statistics.js"></script>
+    <script src="./behavior_map.js"></script>
+
+
+	
+
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Behavior Map</h3>
+
         <p id="behavior_map" style="width:90%"></p>             
 
 

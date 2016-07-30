@@ -4,6 +4,7 @@ function getProjectDeveloper()
 {
     var project = document.getElementsByName("project");
     var developer = document.getElementsByName("developer");
+    createPie(project[0].value,developer[0].value);
     d3.csv("./behavior_data/project_developer.csv",function(error,csv){
         if (error) throw error;
         csv.forEach(function(x){
